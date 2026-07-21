@@ -539,9 +539,6 @@
 
 <section class="menu-section">
   <div class="container">
-    <div class="placeholder-note reveal">
-      ⚠️ Pizza &amp; Deal sizes/prices marked "Set Price" — original menu photo wasn't fully readable for that section. Please confirm exact numbers before going live.
-    </div>
     <div id="menuContainer"></div>
     <div class="empty-state" id="emptyState" style="display:none;">
       <div class="emoji">🍕</div>
@@ -615,13 +612,13 @@
       <p class="section-desc center">We'd love to hear from you.</p>
     </div>
     <div class="contact-grid">
-      <div class="contact-card reveal"><div class="ic">📞</div><h5>Phone</h5><p>+92 307 6120333</p></div>
-      <div class="contact-card reveal"><div class="ic">📍</div><h5>Address</h5><p>Govt A-I Model High School, Sargodha Road, Bhera</p></div>
+      <div class="contact-card reveal"><div class="ic">📞</div><h5>For Order</h5><p>0340-1120333</p></div>
+      <div class="contact-card reveal"><div class="ic">📍</div><h5>Address</h5><p>Near Model High School, Kalma Chowk, Bhera</p></div>
       <div class="contact-card reveal"><div class="ic">🕒</div><h5>Opening Hours</h5><p>Daily, 10:00 AM – 2:00 AM</p></div>
-      <div class="contact-card reveal"><div class="ic">🚚</div><h5>Services</h5><p>Dine-in · Takeaway · Delivery</p></div>
+      <div class="contact-card reveal"><div class="ic">🚚</div><h5>Services</h5><p>Dine-in · Takeaway · Free Home Delivery</p></div>
     </div>
     <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-bottom:36px;">
-      <a href="tel:+923076120333" class="btn btn-primary">📞 Call Now</a>
+      <a href="tel:+923401120333" class="btn btn-primary">📞 Call Now</a>
       <a href="https://wa.me/923076120333" target="_blank" class="btn btn-outline">💬 WhatsApp</a>
       <a href="https://www.google.com/maps/search/?api=1&query=Bhera+Punjab+Pakistan" target="_blank" class="btn btn-outline">📍 Get Directions</a>
     </div>
@@ -650,8 +647,9 @@
       <div>
         <h5>Contact</h5>
         <ul>
-          <li>📞 +92 307 6120333</li>
-          <li>📍 Sargodha Road, Bhera</li>
+          <li>📞 0340-1120333</li>
+          <li>💬 WhatsApp: 0307-6120333</li>
+          <li>📍 Near Model High School, Kalma Chowk, Bhera</li>
           <li>🕒 10:00 AM – 2:00 AM Daily</li>
         </ul>
       </div>
@@ -714,38 +712,40 @@
 
 <script>
 /* ============ MENU DATA ============
-   Prices below marked null are unclear/unreadable in the source menu photo.
-   Replace with confirmed values before launch.
+   All prices confirmed from Oven Bake Pizza Bhera's official menu card.
+   If a price changes in future, edit it here.
 */
 const MENU = {
   pizza: {
     label: "Pizza", icon: "🍕",
     items: [
-      { name:"Chicken Fajita Pizza", desc:"Grilled chicken, capsicum, onion, mozzarella & special fajita sauce.", sizes:{Medium:null, Large:null, XL:null} },
-      { name:"Chicken BBQ Pizza", desc:"Smoky BBQ chicken with mozzarella cheese.", sizes:{Medium:null, Large:null, XL:null} },
-      { name:"Behari Kabab Pizza", desc:"Spiced behari kabab chicken topping.", sizes:{Medium:null, Large:null, XL:null} },
-      { name:"Chicken Supreme Pizza", desc:"Loaded chicken, veggies & cheese.", sizes:{Medium:null, Large:null, XL:null} },
-      { name:"Malai Boti Pizza", desc:"Creamy malai boti chicken topping.", sizes:{Medium:null, Large:null, XL:null} },
-      { name:"Hot n Spicy Pizza", desc:"Spicy chicken with jalapeños & special sauce.", sizes:{Medium:null, Large:null, XL:null} },
-      { name:"Cheese Lover Pizza", desc:"Extra loaded mozzarella cheese.", sizes:{Medium:null, Large:null, XL:null} },
-      { name:"Pizza Vegetariano", desc:"Fresh vegetable toppings with cheese.", sizes:{Medium:null, Large:null, XL:null} },
-      { name:"Chicken Makhani Pizza", desc:"Rich makhani-style chicken pizza.", sizes:{Medium:null, Large:null, XL:null} },
-      { name:"Crown Crust Pizza", desc:"Cheese-stuffed crust special.", sizes:{Medium:null, Large:null} },
-      { name:"Pizza Global Special", desc:"Our biggest, fully loaded special pizza.", sizes:{"Family Size":null} },
+      { name:"Chicken Fajita", desc:"Chicken, onions, bell peppers & olives.", sizes:{"S7":500,"M11":1000,"L13":1200,"XL":1800} },
+      { name:"Chicken Bar B.Q", desc:"Chicken boti, onions, tomatoes & bell peppers.", sizes:{"S7":500,"M11":1000,"L13":1200,"XL":1800} },
+      { name:"Achari Pizza", desc:"Chicken achari, onions, bell peppers, olives & special sauce.", sizes:{"S7":500,"M11":1000,"L13":1200,"XL":1800} },
+      { name:"Cheese Lover", desc:"Melted layer of cheese & special sauce.", sizes:{"S7":500,"M11":1000,"L13":1200,"XL":1800} },
+      { name:"Pizza Vegetarian", desc:"Veggie sauce, onions, tomatoes, sweet corn & mushrooms.", sizes:{"S7":500,"M11":1000,"L13":1200,"XL":1800} },
+      { name:"Hot and Spicy", desc:"Spicy beef or spicy chicken, onions, tomatoes & mix peppers.", sizes:{"S7":500,"M11":1000,"L13":1200,"XL":1800} },
+      { name:"Oven Bake Special Pizza", desc:"Chicken, onions, tomatoes, bell peppers, olives, mushrooms, sweet corn, sausages & pepperoni.", sizes:{"S7":550,"M11":1100,"L13":1300,"XL":1900}, badge:"Chef's Choice" },
+      { name:"Chicken Supreme", desc:"Spicy chicken, onions, tomatoes, green peppers, olives, sausages & double topping of cheese.", sizes:{"S7":550,"M11":1100,"L13":1300,"XL":1900} },
+      { name:"Crown Crust Pizza", desc:"Cheese-stuffed crust special.", sizes:{"M11":1200,"L13":1550,"XL":2100} },
+      { name:"Malai Boti Pizza", desc:"Creamy malai boti chicken topping.", sizes:{"M11":1200,"L13":1550,"XL":2100} },
+      { name:"Behari Kabab Pizza", desc:"Spiced behari kabab chicken topping.", sizes:{"M11":1200,"L13":1550,"XL":2100} },
     ]
   },
   deals: {
     label:"Deals", icon:"🔥",
     items:[
-      { name:"Deal 1", desc:"1 Medium Pizza + 2 Drinks", price:null, badge:"Limited Time" },
-      { name:"Deal 2", desc:"1 Large Pizza + 2 Drinks", price:null, badge:"Limited Time" },
-      { name:"Deal 3", desc:"2 Medium Pizzas + Bottle", price:null, badge:"Limited Time" },
-      { name:"Deal 4", desc:"1 XL Pizza + 4 Drinks", price:null, badge:"Limited Time" },
-      { name:"Deal 5", desc:"Pizza + Wings Combo", price:null, badge:"Limited Time" },
-      { name:"Deal 6", desc:"Pizza + Fries + Drink", price:null, badge:"Limited Time" },
-      { name:"Deal 7", desc:"Family Sharing Combo", price:null, badge:"Limited Time" },
-      { name:"Deal 8", desc:"Student Combo", price:null, badge:"Limited Time" },
-      { name:"Deal 9", desc:"Evening Special Combo", price:null, badge:"Limited Time" },
+      { name:"Student Deal", desc:"1 Small Pizza + 350ml Drink.", price:570, badge:"Limited Time" },
+      { name:"Evening Deal", desc:"1 Large Pizza + 1 Cold Drink 1 Ltr.", price:1350, badge:"Limited Time" },
+      { name:"Midnight Deal", desc:"2 Large Pizza + 1 Cold Drink 1.5 Ltr.", price:2590, badge:"Limited Time" },
+      { name:"Deal 1", desc:"1 Paratha Roll + 1 Chicken Burger + 1 Cold Drink 500ml.", price:620, badge:"Limited Time" },
+      { name:"Deal 2", desc:"1 Zinger Burger + 1 Shawarma + 1 Cold Drink 500ml.", price:670, badge:"Limited Time" },
+      { name:"Deal 3", desc:"1 Zinger Burger + 1 Paratha Roll + 1 Chicken Shawarma + 1 Cold Drink 500ml.", price:910, badge:"Limited Time" },
+      { name:"Deal 4", desc:"1 Small Pizza + 1 Zinger Burger + 1 Cold Drink 500ml.", price:950, badge:"Limited Time" },
+      { name:"Deal 5", desc:"1 Medium Pizza + 1 Zinger Burger + 1 Chicken Shawarma + 1 Drink 1.5 Ltr.", price:2340, badge:"Limited Time" },
+      { name:"Deal 6", desc:"1 Large Pizza + 2 Zinger Burger + 1 Paratha Roll + 1 Drink 1.5 Ltr.", price:2580, badge:"Limited Time" },
+      { name:"Big Deal 1", desc:"1 Large + 1 Small Pizza, 1 Zinger Burger, 1 Chicken Burger, 1 Paratha Roll, 1 Drink 1.5 Ltr.", price:2690, badge:"Family" },
+      { name:"Big Deal 2", desc:"2 Large Pizza, 2 Zinger Burger, 2 Chicken Burger, 2 Chicken Shawarma, 2 Paratha Roll, 2 Drink 1.5 Ltr.", price:4800, badge:"Family" },
       { name:"2 Shawarma Deal", desc:"2 Shawarma with 500ml cold drink.", price:540 },
       { name:"2 Pratha Roll Deal", desc:"2 Pratha Rolls with 500ml cold drink.", price:580 },
       { name:"2 Chicken Burger Deal", desc:"2 Chicken Burgers with 500ml cold drink.", price:600 },
@@ -755,17 +755,18 @@ const MENU = {
   burgers: {
     label:"Burgers", icon:"🍔",
     items:[
-      { name:"Chicken Petti Burger", desc:"Classic chicken patty burger.", price:280 },
+      { name:"Chicken Peti Burger", desc:"Classic chicken patty burger.", price:280 },
       { name:"Zinger Burger", desc:"Crispy zinger fillet with mayo.", price:350 },
-      { name:"Zinger Tower Burger", desc:"Zinger fillet with cheese, tower-style.", price:400 },
+      { name:"Zinger Burger with Cheese", desc:"Zinger fillet loaded with cheese.", price:400 },
+      { name:"Zinger Tower Burger", desc:"Zinger fillet, tower-style, extra loaded.", price:500 },
       { name:"Double Decker Burger", desc:"Double chicken patty, double cheese.", price:500 },
     ]
   },
   sandwiches: {
     label:"Sandwiches", icon:"🥪",
     items:[
-      { name:"Zingiest Cheese Sandwich", desc:"Toasted with cheese, lettuce & special sauce.", price:650 },
-      { name:"Classic Chicken Cheese Sandwich", desc:"Shredded chicken with melted cheese.", price:650 },
+      { name:"Jalapeno Cheese Sandwich", desc:"Jalapeno, chicken chunks, lettuce, tomatoes & cheese, served with fries.", price:650 },
+      { name:"Classic Chicken Sandwich", desc:"Cube chicken with lettuce, tomatoes & special sauce, served with fries.", price:650 },
       { name:"Zinger Sandwich", desc:"Crispy zinger fillet, toasted & saucy.", price:700 },
     ]
   },
@@ -773,53 +774,46 @@ const MENU = {
     label:"Shawarma & Rolls", icon:"🌯",
     items:[
       { name:"Chicken Shawarma", desc:"Classic chicken shawarma roll.", price:220 },
-      { name:"Zinger Paratha Roll", desc:"Zinger fillet wrapped in paratha.", price:240 },
-      { name:"Chicken Paratha Roll", desc:"Chicken filling wrapped in paratha.", price:280 },
-      { name:"Zinger Shawarma", desc:"Zinger-style shawarma roll.", price:300 },
+      { name:"Zinger Shawarma", desc:"Zinger-style shawarma roll.", price:280 },
+      { name:"Chicken Paratha Roll", desc:"Chicken filling wrapped in paratha.", price:240 },
+      { name:"Zinger Paratha Roll", desc:"Zinger fillet wrapped in paratha.", price:300 },
       { name:"Chicken Kabab Roll", desc:"Kabab-style chicken roll.", price:700 },
-      { name:"Stuffed Chicken Spiral Roll", desc:"Spiral-stuffed chicken roll.", price:580 },
-      { name:"Oven Bake Spin Platter", desc:"Sharing platter of spiral rolls.", price:1100 },
+      { name:"Stuffed Chicken Spin Roll", desc:"Spiral-stuffed chicken roll.", price:580 },
+      { name:"Oven Bake Platter", desc:"Specially oven-baked chicken wings with 4 pieces of BBQ chicken spring rolls, fries & special mayo dip sauces.", price:1100, badge:"Sharing" },
+      { name:"2 Shawarma", desc:"2 Shawarma with 500ml cold drink.", price:540 },
+      { name:"2 Pratha Roll", desc:"2 Pratha Rolls with 500ml cold drink.", price:580 },
     ]
   },
   pasta: {
     label:"Pasta", icon:"🍝",
     items:[
-      { name:"Crispy Chicken Pasta", desc:"Creamy pasta topped with crispy chicken.", price:800 },
-      { name:"Alfredo Pasta", desc:"Classic creamy alfredo sauce pasta.", price:750 },
-      { name:"Creamy Chicken Pasta", desc:"Rich, creamy chicken pasta.", price:700 },
+      { name:"Crispy Pasta", desc:"Creamy pasta topped with crispy chicken.", price:800 },
+      { name:"Alfrado Pasta", desc:"Classic creamy alfredo sauce pasta.", price:750 },
+      { name:"Creamy Pasta", desc:"Rich, creamy chicken pasta.", price:700 },
       { name:"Loaded Fries", desc:"Fries loaded with cheese & chicken.", price:650 },
     ]
   },
   wings: {
     label:"Wings & Nuggets", icon:"🍗",
     items:[
-      { name:"BBQ Hot Wings (6pcs)", desc:"Smoky BBQ glazed wings.", price:350 },
-      { name:"BBQ Hot Wings (12pcs)", desc:"Smoky BBQ glazed wings, sharing size.", price:650 },
-      { name:"Oven Baked Wings (6pcs)", desc:"Oven baked spicy wings.", price:350 },
-      { name:"Oven Baked Wings (12pcs)", desc:"Oven baked spicy wings, sharing size.", price:650 },
+      { name:"Oven Baked Wings", desc:"Special marinated oven baked wings with your choice of BBQ sweet chilli or special buffalo sauce.", sizes:{"06 Pcs":350,"12 Pcs":650} },
+      { name:"BBQ Hot Wings", desc:"Smoky BBQ glazed wings.", sizes:{"06 Pcs":350,"12 Pcs":650} },
+      { name:"Nuggets", desc:"Classic crispy chicken nuggets.", sizes:{"06 Pcs":350,"12 Pcs":650} },
     ]
   },
   appetizers: {
     label:"Appetizers", icon:"🍟",
     items:[
-      { name:"French Fries (Regular)", desc:"Crispy golden fries.", price:250 },
-      { name:"French Fries (Large)", desc:"Crispy golden fries, large.", price:300 },
-      { name:"Special Mayo Fries (Regular)", desc:"Fries loaded with creamy mayo.", price:350 },
-      { name:"Special Mayo Fries (Large)", desc:"Fries loaded with creamy mayo, large.", price:400 },
-      { name:"Cheesy Bread Sticks", desc:"Warm bread sticks loaded with cheese.", price:800 },
+      { name:"French Fries", desc:"Classic plain french fries.", sizes:{"Regular":250,"Large":350} },
+      { name:"Special Mayo Fries", desc:"Classic plain french fries with special mayo.", sizes:{"Regular":300,"Large":400} },
+      { name:"Cheesy Bread Sticks", desc:"Crispy on the outside, soft & chewy on the inside, served with a sauce.", price:800 },
     ]
   },
   toppings: {
     label:"Extra Toppings", icon:"➕",
     items:[
-      { name:"Extra Topping (S)", desc:"Add extra topping of your choice.", price:100 },
-      { name:"Extra Topping (M)", desc:"Add extra topping of your choice.", price:160 },
-      { name:"Extra Topping (L)", desc:"Add extra topping of your choice.", price:200 },
-      { name:"Extra Topping (XL)", desc:"Add extra topping of your choice.", price:300 },
-      { name:"Mayo Topping (S)", desc:"Extra mayo topping.", price:100 },
-      { name:"Mayo Topping (M)", desc:"Extra mayo topping.", price:120 },
-      { name:"Mayo Topping (L)", desc:"Extra mayo topping.", price:180 },
-      { name:"Mayo Topping (XL)", desc:"Extra mayo topping.", price:250 },
+      { name:"Extra Topping", desc:"Add extra topping of your choice.", sizes:{"S":100,"M":160,"L":200,"XL":300} },
+      { name:"Mayo Topping", desc:"Extra mayo topping.", sizes:{"S":100,"M":120,"L":180,"XL":250} },
     ]
   }
 };
