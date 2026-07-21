@@ -8,6 +8,7 @@
 <meta property="og:title" content="Oven Bake Pizza Bhera" />
 <meta property="og:description" content="Fresh Pizza, Great Taste, Delivered Hot. Order online via WhatsApp." />
 <meta property="og:type" content="restaurant.menu" />
+<link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -81,7 +82,8 @@
   .navbar.scrolled{background:rgba(251,247,242,0.92); backdrop-filter:blur(14px); box-shadow:var(--shadow-sm); padding:12px 0;}
   .nav-inner{display:flex; align-items:center; justify-content:space-between; gap:24px;}
   .logo{display:flex; align-items:center; gap:10px; font-family:'Plus Jakarta Sans'; font-weight:800; font-size:19px;}
-  .logo-mark{width:40px; height:40px; border-radius:50%; background:linear-gradient(135deg,var(--orange),var(--red)); display:flex; align-items:center; justify-content:center; font-size:19px; box-shadow:0 6px 16px rgba(232,114,12,.4);}
+  .logo-mark{width:44px; height:44px; border-radius:50%; overflow:hidden; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 16px rgba(232,114,12,.4); background:#B4131C; flex-shrink:0;}
+  .logo-mark img{width:100%; height:100%; object-fit:cover; transform:scale(1.35);}
   .logo-text span{display:block; font-size:10px; font-weight:600; letter-spacing:.14em; color:var(--gray-mid); text-transform:uppercase;}
   .nav-links{display:flex; align-items:center; gap:34px; list-style:none;}
   .nav-links a{font-weight:600; font-size:14.5px; color:var(--charcoal); position:relative; padding:4px 0;}
@@ -395,7 +397,7 @@
 <header class="navbar" id="navbar">
   <div class="container nav-inner">
     <a href="#home" class="logo">
-      <span class="logo-mark">🍕</span>
+      <span class="logo-mark"><img src="assets/logo.png" alt="Oven Bake Pizza Bhera logo"></span>
       <span class="logo-text">Oven Bake Pizza<span>Bhera</span></span>
     </a>
     <nav>
@@ -418,7 +420,7 @@
 <div class="scrim" id="scrim" onclick="closeAllOverlays()"></div>
 <div class="mobile-menu" id="mobileMenu">
   <div class="mobile-menu-header">
-    <span class="logo"><span class="logo-mark">🍕</span></span>
+    <span class="logo"><span class="logo-mark"><img src="assets/logo.png" alt="Oven Bake Pizza Bhera logo"></span></span>
     <button class="icon-btn" onclick="closeAllOverlays()" aria-label="Close menu">✕</button>
   </div>
   <ul>
@@ -453,12 +455,12 @@
         </div>
       </div>
       <div class="hero-visual">
-        <div class="hero-disc"><div class="hero-disc-inner"><span>🍕</span></div></div>
+        <div class="hero-disc"><div class="hero-disc-inner"><img src="assets/logo.png" alt="Oven Bake Pizza Bhera" style="width:72%; height:72%; object-fit:contain;"></div></div>
         <div class="floaty f1">🔥 <span>Oven Fresh Daily</span></div>
         <div class="floaty f2"><span class="dot"></span> Order Ready in 20 min</div>
       </div>
     </div>
-    <p class="hero-note">Photography placeholder — swap the hero graphic for real food photography of your pizzas once available, for maximum premium impact.</p>
+    <p class="hero-note">Hero now shows your real logo. Once you send real pizza photos, this spot is best replaced with an actual product shot for maximum impact.</p>
   </div>
 </section>
 
@@ -633,7 +635,7 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <span class="logo" style="color:#fff;"><span class="logo-mark">🍕</span><span style="color:#fff;">Oven Bake Pizza Bhera</span></span>
+        <span class="logo" style="color:#fff;"><span class="logo-mark"><img src="assets/logo.png" alt="Oven Bake Pizza Bhera logo"></span><span style="color:#fff;">Oven Bake Pizza Bhera</span></span>
         <p class="desc">Fresh pizza, burgers, and fast food — made with quality ingredients, served hot, delivered fast.</p>
       </div>
       <div>
